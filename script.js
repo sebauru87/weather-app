@@ -22,6 +22,11 @@ getWeatherData = (city) => {
       document.getElementById("city-name").innerText = weatherData.name;
       document.getElementById("temp").innerText = weatherData.main.temp;
       document.getElementById("weather-type").innerText = weatherData.weather[0].description;
+      document.getElementById("min-temp").innerText = weatherData.main.temp_min;
+      document.getElementById("max-temp").innerText = weatherData.main.temp_max;
+      document.getElementById("pressure").innerText = weatherData.main.pressure;
+      document.getElementById("humidity").innerText = weatherData.main.humidity;
+
 
     })
     .catch((error) => {
